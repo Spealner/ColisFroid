@@ -32,3 +32,9 @@ symfony serve -d
 ```
 php bin/phpunit --testdox
 ```
+
+## Créer des fausses données
+
+```
+symfony console doctrine:fixtures:load
+```
