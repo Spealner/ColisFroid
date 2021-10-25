@@ -19,32 +19,14 @@ class ColisRepository extends ServiceEntityRepository
         parent::__construct($registry, Colis::class);
     }
 
-    // /**
-    //  * @return Colis[] Returns an array of Colis objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @return Colis[]
+     */
+    public function allBox()
     {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
+        return $this->createQueryBuilder('p')
             ->getQuery()
             ->getResult()
         ;
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Colis
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

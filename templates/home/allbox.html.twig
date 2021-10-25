@@ -26,6 +26,7 @@
         </div>
         <!-- / .row -->
         <div class="row">
+            {% for colis in colis %}
                 <div class="col-12">
 
                     <!-- Card -->
@@ -47,22 +48,23 @@
                                 <a href="#!" class="card-body">
 
                                     <!-- Heading -->
-                                    <h3>N° du Coli :</h3>
-                                    <h4>Nombre de colis :</h4>
+                                    <h3>N° du Coli : {{ colis.number }}</h3>
+                                    <h4>Nombre de colis :  {{ colis.nombre }}</h4>
 
                                     <!-- Text -->
                                     <p class="mb-0 text-muted">
-                                        Labo de Chargement :
+                                        Labo de Chargement : {{ colis.loadinglab }}
                                     </p>
 
                                     <p class="mb-0 text-muted">
-                                        Labo de Livraison :
+                                        Labo de Livraison : {{ colis.deliverylab }}
                                     </p>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            {% endfor %}
         </div>
         <!-- / .row -->
     </div>
