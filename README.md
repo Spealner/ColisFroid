@@ -10,6 +10,7 @@
 * PHP 7.4
 * Composer
 * Symfony CLI
+* Nodejs et NPM
 
 Vous pouvez vérifier les pré-requis avec la commande suivante (de la CLI Symfony) :
 
@@ -20,6 +21,9 @@ symphony check-requirements
 ### Lancer environnement de développement
 
 ```
+composer install
+npm install
+npm run build
 symfony serve -d
 ```
 

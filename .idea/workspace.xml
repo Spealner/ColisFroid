@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Home, NavBar">
+      <change afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/entete.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +186,8 @@
       <recent name="C:\Users\PC\Desktop\Projet ColisFroid\Projet Site ColisFroid\colisfroid\templates\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\Projet ColisFroid\Projet Site ColisFroid\colisfroid\templates\home" />
+      <recent name="C:\Users\PC\Desktop\Projet ColisFroid\Projet Site ColisFroid\colisfroid\templates\base" />
       <recent name="C:\Users\PC\Desktop\Projet ColisFroid\Projet Site ColisFroid\colisfroid" />
     </key>
   </component>
