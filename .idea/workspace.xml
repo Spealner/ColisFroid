@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add GitLab CI Pipeline">
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Env dev">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20211025074543.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20211025082213.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Colis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ColisRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ColisUnitTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/UserUnitTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,12 +167,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1zrVVtnqLoe17Qt6isidIJEvMP7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -194,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634906222681</updated>
-      <workItem from="1634906227139" duration="4626000" />
+      <workItem from="1634906227139" duration="9270000" />
     </task>
     <task id="LOCAL-00001" summary="Add GitLab CI">
       <created>1634907819873</created>
@@ -210,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634908916413</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Env dev">
+      <created>1635146619763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635146619763</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,8 +244,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add GitLab CI" />
     <MESSAGE value="Add GitLab CI Pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add GitLab CI Pipeline" />
+    <MESSAGE value="Add Env dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Env dev" />
   </component>
 </project>
