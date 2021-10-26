@@ -69,6 +69,10 @@
         <!-- / .row -->
     </div>
     <!-- / .container -->
+    <div class="d-flex justify-content-center">
+        {% do colis.setPageRange(2) %}
+        {{ knp_pagination_render(colis, 'base/pagination.html.twig') }}
+    </div>
 </section>
 
 {% endblock %}

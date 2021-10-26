@@ -33,7 +33,7 @@ class AppFixtures extends Fixture
         $manager->persist($user);
 
         // Création de colis
-        for ($i=0; $i < 10; $i++) {
+        for ($i=0; $i < 20; $i++) {
             $colis = new Colis();
 
             $colis->setNombre($faker->randomFloat(2, 10, 100))
