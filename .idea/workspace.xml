@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Donnes Tests Home Page">
-      <change afterPath="$PROJECT_DIR$/templates/base/pagination.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/colisfroid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/colisfroid.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Pagination">
+      <change afterPath="$PROJECT_DIR$/src/Form/AddBoxType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ColisRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ColisRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/entete.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/entete.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635169122941</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add Pagination">
+      <created>1635250426156</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635250426156</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +318,7 @@
     <MESSAGE value="Add Login + page" />
     <MESSAGE value="Add Fixtures + Faker" />
     <MESSAGE value="Add Donnes Tests Home Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Donnes Tests Home Page" />
+    <MESSAGE value="Add Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Pagination" />
   </component>
 </project>

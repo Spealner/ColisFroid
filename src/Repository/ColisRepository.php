@@ -25,6 +25,7 @@ class ColisRepository extends ServiceEntityRepository
     public function allBox()
     {
         return $this->createQueryBuilder('p')
+            ->orderBy('p.id', 'DESC')
             ->getQuery()
             ->getResult()
         ;
