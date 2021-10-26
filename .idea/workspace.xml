@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Pagination">
-      <change afterPath="$PROJECT_DIR$/src/Form/AddBoxType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" afterDir="false" />
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add ColisForm + Page">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Cars.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CarsRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ColisRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ColisRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/entete.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/entete.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AddBoxType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddBoxType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635250426156</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add ColisForm + Page">
+      <created>1635252662957</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1635252662957</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +325,7 @@
     <MESSAGE value="Add Fixtures + Faker" />
     <MESSAGE value="Add Donnes Tests Home Page" />
     <MESSAGE value="Add Pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Pagination" />
+    <MESSAGE value="Add ColisForm + Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ColisForm + Page" />
   </component>
 </project>

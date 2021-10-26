@@ -7,18 +7,16 @@
             <div class="col-12">
 
                 <!-- Heading -->
-                <h2 class="mb-0"
+                <h2 class="col-12"
                     style="background-color: #28A5C5;
-                        border-radius: 5px;
-                        color: #FFF;
-                        font-size: 5rem;
-                        text-align: center;
-                        width: 45%;
-                        margin-top: 15px;
-                        display: block;
-                        margin-right: auto;
-                        margin-left: auto;
-                    ">
+                           color: #FFF;
+                           font-size: 4rem;
+                           text-align: center;
+                           width: 100%;
+                           margin-left: auto;
+                           margin-right: auto;
+                           align-items: center;
+                ">
                     Tous les colis :
                 </h2>
 
@@ -29,23 +27,23 @@
             {% for colis in colis %}
                 <div class="col-12">
 
+                    <!-- Checkbox -->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Véhicule 1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Véhicule 2</label>
+                    </div>
+
                     <!-- Card -->
                     <div class="card card-row shadow-light-lg mb-6">
                         <div class="row gx-0">
-                            <p
-                                    class="col-12 col-md-6 bg-cover card-img-start"
-                                    style="background-image: url(img/test.jpg);
-                                margin-top: 15px;
-                        ">
-
-                                <!-- Image (placeholder) -->
-                                <img src="" width="646" height="255" alt="...">
-
-                            </p>
                             <div class="col-12 col-md-6">
 
                                 <!-- Body -->
-                                <a href="#!" class="card-body">
+                                <p class="card-body">
 
                                     <!-- Heading -->
                                     <h3>N° du Coli : {{ colis.number }}</h3>
@@ -59,7 +57,7 @@
                                     <p class="mb-0 text-muted">
                                         Labo de Livraison : {{ colis.deliverylab }}
                                     </p>
-                                </a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -67,6 +65,14 @@
             {% endfor %}
         </div>
         <!-- / .row -->
+    </div>
+    <!-- Bouton -->
+    <div class="container" style="align-items: center">
+        <input type="checkbox" class="btn-check" id="btn-check-1" checked autocomplete="off">
+        <label class="btn btn-primary" for="btn-check-2">Véhicule 1</label>
+
+        <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+        <label class="btn btn-primary" for="btn-check-2">Véhicule 2</label>
     </div>
     <!-- / .container -->
     <div class="d-flex justify-content-center">
