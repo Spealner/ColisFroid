@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Véhicule 2{% endblock %}
+
+{% block body %}
+    <h1>Véhicule 2</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Numero du coli :</th>
+            <th>Nombre de colis :</th>
+            <th>Laboratoire de chargement :</th>
+            <th>Laboratoire de livraison :</th>
+            <th>Action :</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for colis in colis %}
+            <tr>
+                <td>{{ colis.number }}</td>
+                <td>{{ colis.nombre }}</td>
+                <td>{{ colis.loadinglab }}</td>
+                <td>{{ colis.deliverylab }}</td>
+                <td>
+                    <a href="#!" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5" class="text-center">Votre panier est vide</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
