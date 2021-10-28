@@ -22,18 +22,11 @@
 
             <!-- Navigation -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li>
                     <a class="nav-link active" aria-current="page" href="{{ path('home') }}"
                        style="color: #28A5C5"
                     >
-                        Menu
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link active" aria-current="page" href="#!"
-                       style="color: #28A5C5"
-                    >
-                        A propos
+                        Accueil
                     </a>
                 </li>
                 <li class="nav-item dropdown">
@@ -45,25 +38,22 @@
                        aria-expanded="false"
                        style="color: #28A5C5"
                     >
-                        Catégorie
+                        Menu
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{ path('add_colis') }}">Ajoutez un coli</a></li>
-                        <li><a class="dropdown-item" href="#!">Véhicule 1</a></li>
-                        <li><a class="dropdown-item" href="#!">Véhicule 2</a></li>
+                        <li><a class="dropdown-item" href="{{ path('car_one') }}">Véhicule 1</a></li>
+                        <li><a class="dropdown-item" href="{{ path('car_two') }}">Véhicule 2</a></li>
                         <li><hr class="dropdown-divider"></li>
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
             <form class="d-flex" style="margin-left: 10px">
                 {% if is_granted('ROLE_USER') %}
                     <a href="{{ path('app_logout') }}" class="btn btn-outline-success" type="submit">Se deconnecter</a>
                 {% else %}
                     <a href="{{ path('app_login') }}" class="btn btn-outline-success" type="submit">Se connecter</a>
+                    <a href="{{ path('register') }}" class="btn btn-outline-success" type="submit">S'enregistrer</a>
                 {% endif %}
             </form>
         </div>

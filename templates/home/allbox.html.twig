@@ -7,18 +7,16 @@
             <div class="col-12">
 
                 <!-- Heading -->
-                <h2 class="mb-0"
+                <h2 class="col-12"
                     style="background-color: #28A5C5;
-                        border-radius: 5px;
-                        color: #FFF;
-                        font-size: 5rem;
-                        text-align: center;
-                        width: 45%;
-                        margin-top: 15px;
-                        display: block;
-                        margin-right: auto;
-                        margin-left: auto;
-                    ">
+                           color: #FFF;
+                           font-size: 4rem;
+                           text-align: center;
+                           width: 100%;
+                           margin-left: auto;
+                           margin-right: auto;
+                           align-items: center;
+                ">
                     Tous les colis :
                 </h2>
 
@@ -32,24 +30,13 @@
                     <!-- Card -->
                     <div class="card card-row shadow-light-lg mb-6">
                         <div class="row gx-0">
-                            <p
-                                    class="col-12 col-md-6 bg-cover card-img-start"
-                                    style="background-image: url(img/test.jpg);
-                                margin-top: 15px;
-                        ">
-
-                                <!-- Image (placeholder) -->
-                                <img src="" width="646" height="255" alt="...">
-
-                            </p>
                             <div class="col-12 col-md-6">
 
                                 <!-- Body -->
-                                <a href="#!" class="card-body">
+                                <p class="card-body">
 
                                     <!-- Heading -->
-                                    <h3>N° du Coli : {{ colis.number }}</h3>
-                                    <h4>Nombre de colis :  {{ colis.nombre }}</h4>
+                                    <h3>N° du Coli : {{ colis.number }} / {{ colis.nombre }}</h3>
 
                                     <!-- Text -->
                                     <p class="mb-0 text-muted">
@@ -59,7 +46,18 @@
                                     <p class="mb-0 text-muted">
                                         Labo de Livraison : {{ colis.deliverylab }}
                                     </p>
-                                </a>
+
+                                <div style="margin-bottom: 10px">
+                                    <a
+                                        href="{{ path('car_one_add', {id: colis.id}) }}"
+                                        class="btn btn-primary"
+                                    >Véhicule 1</a>
+                                    <a
+                                        href="{{ path('car_two_add', {id: colis.id}) }}"
+                                        class="btn btn-primary"
+                                    >Véhicule 2</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
