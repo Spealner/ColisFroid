@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add CheckBox + Boutons Véhicules">
-      <change afterPath="$PROJECT_DIR$/src/Controller/CarOneController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CarTwoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/AddUserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/car_one/carone.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars pages + navigation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Cars.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Colis.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Colis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarOneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarTwoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarTwoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/AddBoxType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddBoxType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/car_one/carone.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_one/carone.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635256268009</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add Cars pages + navigation">
+      <created>1635351126203</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1635351126203</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +354,7 @@
     <MESSAGE value="Add Pagination" />
     <MESSAGE value="Add ColisForm + Page" />
     <MESSAGE value="Add CheckBox + Boutons Véhicules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CheckBox + Boutons Véhicules" />
+    <MESSAGE value="Add Cars pages + navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Cars pages + navigation" />
   </component>
 </project>

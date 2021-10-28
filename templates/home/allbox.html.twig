@@ -36,8 +36,7 @@
                                 <p class="card-body">
 
                                     <!-- Heading -->
-                                    <h3>N° du Coli : {{ colis.number }}</h3>
-                                    <h4>Nombre de colis :  {{ colis.nombre }}</h4>
+                                    <h3>N° du Coli : {{ colis.number }} / {{ colis.nombre }}</h3>
 
                                     <!-- Text -->
                                     <p class="mb-0 text-muted">
@@ -50,11 +49,11 @@
 
                                 <div style="margin-bottom: 10px">
                                     <a
-                                        href="{{ path('car_one') }}"
+                                        href="{{ path('car_one_add', {id: colis.id}) }}"
                                         class="btn btn-primary"
                                     >Véhicule 1</a>
                                     <a
-                                        href="{{ path('car_two') }}"
+                                        href="{{ path('car_two_add', {id: colis.id}) }}"
                                         class="btn btn-primary"
                                     >Véhicule 2</a>
                                 </div>

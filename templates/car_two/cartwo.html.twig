@@ -3,7 +3,16 @@
 {% block title %}Véhicule 2{% endblock %}
 
 {% block body %}
-    <h1>Véhicule 2</h1>
+    <h1 style="color: #28A5C5;
+               font-size: 4rem;
+               text-align: center;
+               width: 100%;
+               margin-left: auto;
+               margin-right: auto;
+               align-items: center;
+    ">
+        Véhicule 2
+    </h1>
 
     <table class="table">
         <thead>
@@ -16,19 +25,19 @@
         </tr>
         </thead>
         <tbody>
-        {% for colis in colis %}
+        {% for item in items %}
             <tr>
-                <td>{{ colis.number }}</td>
-                <td>{{ colis.nombre }}</td>
-                <td>{{ colis.loadinglab }}</td>
-                <td>{{ colis.deliverylab }}</td>
+                <td>{{ item.product.number }}</td>
+                <td>{{ item.product.nombre }}</td>
+                <td>{{ item.product.loadinglab }}</td>
+                <td>{{ item.product.deliverylab }}</td>
                 <td>
-                    <a href="#!" class="btn btn-danger">Supprimer</a>
+                    <a href="{{ path('car_two_remove', {id: item.product.id}) }}" class="btn btn-danger">Supprimer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="5" class="text-center">Votre panier est vide</td>
+                <td colspan="5" class="text-center">Votre camion est vide</td>
             </tr>
         {% endfor %}
         </tbody>
