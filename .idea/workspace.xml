@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars pages + navigation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CarOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarOneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CarTwoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarTwoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/AddBoxType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddBoxType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_one/carone.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_one/carone.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars Tries" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635351126203</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add Cars Tries">
+      <created>1635423283866</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635423283866</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +352,7 @@
     <MESSAGE value="Add ColisForm + Page" />
     <MESSAGE value="Add CheckBox + Boutons Véhicules" />
     <MESSAGE value="Add Cars pages + navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Cars pages + navigation" />
+    <MESSAGE value="Add Cars Tries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Cars Tries" />
   </component>
 </project>
