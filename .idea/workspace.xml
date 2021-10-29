@@ -216,7 +216,7 @@
       <updated>1634906222681</updated>
       <workItem from="1634906227139" duration="13036000" />
       <workItem from="1635425845219" duration="2125000" />
-      <workItem from="1635497891554" duration="1721000" />
+      <workItem from="1635497891554" duration="2414000" />
     </task>
     <task id="LOCAL-00001" summary="Add GitLab CI">
       <created>1634907819873</created>
@@ -330,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635498391134</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Maj projet">
+      <created>1635499843713</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635499843713</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
