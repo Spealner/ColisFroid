@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Véhicule 2{% endblock %}
+{% block title %}Véhicule 1{% endblock %}
 
 {% block body %}
     <h1 style="color: #28A5C5;
@@ -17,7 +17,7 @@
     <table class="table">
         <thead>
         <tr>
-            <th>Numero du coli :</th>
+            <th>Numero du colis :</th>
             <th>Nombre de colis :</th>
             <th>Laboratoire de chargement :</th>
             <th>Laboratoire de livraison :</th>
@@ -33,6 +33,10 @@
                 <td>{{ item.product.deliverylab }}</td>
                 <td>
                     <a href="{{ path('car_one_remove', {id: item.product.id}) }}" class="btn btn-danger">Supprimer</a>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Vérifier</label>
+                    </div>
                 </td>
             </tr>
         {% else %}
