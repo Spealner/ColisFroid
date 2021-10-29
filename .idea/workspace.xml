@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars Tries">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a9693728-8002-4da8-81be-738f511537f4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a9693728-8002-4da8-81be-738f511537f4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a9693728-8002-4da8-81be-738f511537f4/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a9693728-8002-4da8-81be-738f511537f4/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_one/carone.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_one/carone.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/entete.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/entete.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635423283866</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Maj projet">
+      <created>1635504553018</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635504553018</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +373,7 @@
     <MESSAGE value="Add CheckBox + Boutons Véhicules" />
     <MESSAGE value="Add Cars pages + navigation" />
     <MESSAGE value="Add Cars Tries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Cars Tries" />
+    <MESSAGE value="Maj projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maj projet" />
   </component>
 </project>
