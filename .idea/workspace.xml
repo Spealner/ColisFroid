@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars Tries">
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Maj projet">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CarThreeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car_three/carthree.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/rd-temp-ecf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/rd-temp-ecf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/colisfroid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/colisfroid.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +228,7 @@
       <workItem from="1634906227139" duration="13036000" />
       <workItem from="1635425845219" duration="2125000" />
       <workItem from="1635497891554" duration="451000" />
+      <workItem from="1635683979033" duration="5863000" />
     </task>
     <task id="LOCAL-00001" summary="Add GitLab CI">
       <created>1634907819873</created>
