@@ -11,33 +11,33 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
-class CarOneController extends AbstractController
+class CarThreeController extends AbstractController
 {
     /**
-     * @Route("/vehicule1", name="car_one")
+     * @Route("/vehicule3", name="car_three")
      */
     public function index(ColisRepository $colisRepository, SessionInterface $session): Response
     {
         // On récupère le panier
-        $panier = $session->get("panier", []);
+        $panier3 = $session->get("panier3", []);
 
         // On fabrique les données
-        $dataPanier = [];
+        $dataPanier3 = [];
 
-        foreach ($panier as $id => $quantite) {
-            $dataPanier[] = [
+        foreach ($panier3 as $id => $quantite) {
+            $dataPanier3[] = [
                 "product" => $colisRepository->find($id),
                 "quantite" => $quantite
             ];
         }
 
-        return $this->render('car_one/carone.html.twig', [
-            'items' => $dataPanier
+        return $this->render('car_three/carthree.html.twig', [
+            'items' => $dataPanier3
         ]);
     }
 
     /**
-     * @Route("véhicule1/add/{id}", name="car_one_add")
+     * @Route("véhicule3/add/{id}", name="car_three_add")
      */
     public function addBox(AddColis $addColis, int $id)
     {
@@ -47,12 +47,12 @@ class CarOneController extends AbstractController
     }
 
     /**
-     * @Route("véhicule1/remove/{id}", name="car_one_remove")
+     * @Route("véhicule3/remove/{id}", name="car_three_remove")
      */
     public function removeColis(RemoveColis $removeColis, int $id)
     {
         $removeColis->removeColis();
 
-        return $this->redirectToRoute('car_one');
+        return $this->redirectToRoute('car_three');
     }
 }

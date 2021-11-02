@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Colis;
 use App\Repository\ColisRepository;
+use App\Services\AddColis;
+use App\Services\RemoveColis;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -37,20 +39,9 @@ class CarTwoController extends AbstractController
     /**
      * @Route("véhicule2/add/{id}", name="car_two_add")
      */
-    public function add(Colis $colis, SessionInterface $session)
+    public function addBox(AddColis $addColis, int $id)
     {
-        // on récupère le panier actuel
-        $panier2 = $session->get("panier2", []);
-        $id = $colis->getId();
-
-        if(!empty($panier2[$id])) {
-            $panier2[$id]++;
-        } else {
-            $panier2[$id] = 1;
-        }
-
-        // on sauvegarde le panier dans la session
-        $session->set("panier2", $panier2);
+        $addColis->add();
 
         return $this->redirectToRoute('home');
     }
@@ -58,22 +49,9 @@ class CarTwoController extends AbstractController
     /**
      * @Route("véhicule2/remove/{id}", name="car_two_remove")
      */
-    public function remove(Colis $colis, SessionInterface $session)
+    public function removeColis(RemoveColis $removeColis, int $id)
     {
-        // on récupère le panier actuel
-        $panier2 = $session->get("panier2", []);
-        $id = $colis->getId();
-
-        if(!empty($panier2[$id])) {
-            if ($panier2[$id] > 1) {
-                $panier2[$id]--;
-            } else {
-                unset($panier2[$id]);
-            }
-        }
-
-        // on sauvegarde le panier dans la session
-        $session->set("panier2", $panier2);
+        $removeColis->removeColis();
 
         return $this->redirectToRoute('car_two');
     }

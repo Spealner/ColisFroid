@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars Tries" />
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars Tries">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CarThreeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/AddColis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/RemoveColis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car_three/carthree.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211025082213.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20211025082213.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarOneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarTwoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarTwoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -213,6 +227,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634906222681</updated>
       <workItem from="1634906227139" duration="13036000" />
+      <workItem from="1635842998611" duration="8591000" />
     </task>
     <task id="LOCAL-00001" summary="Add GitLab CI">
       <created>1634907819873</created>
@@ -335,6 +350,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
