@@ -5,18 +5,19 @@
 {% form_theme addColisForm 'bootstrap_5_layout.html.twig' %}
 
 {% block body %}
-    <section style="background-color: #504e4e">
-        <div class="container d-flex flex-column">
-            <div class="row align-items-center justify-content-between gx-0 min-vh-100">
-                <div class="col-12 col-md-5 align-self-stretch">
-                    <div class="d-md-none img-cover"></div>
-                    <img alt="..." src="/img/test.jpg" height="87%" width="640">
-                    <div class="d-none d-md-block vw-50 h-100 float-end bg-cover">
+    {% if editMode %}
+    <section>
+        <div style="background-color: #504e4e">
+            <div class="container d-flex flex-column">
+                <div class="row align-items-center justify-content-between gx-0 min-vh-100">
+                    <div class="col-12 col-md-5 align-self-stretch">
+                        <div class="d-md-none img-cover"></div>
+                        <img alt="..." src="/img/test.jpg" height="87%" width="640">
+                        <div class="d-none d-md-block vw-50 h-100 float-end bg-cover"></div>
                     </div>
-                </div>
                 <div class="col-12 col-md-6 py-8 py-md-11" style="color: #28A5C5">
                     <h2 class="fw-bold text-center mb-2">
-                        Ajouter des colis :
+                        Modifier le colis :
                     </h2>
 
                     <hr class="hr-sm my-6 my-md-8 mx-auto bg-gray-300" style="color: #28A5C5;">
@@ -32,33 +33,74 @@
                         {{ form_errors(addColisForm) }}
                     </div>
 
-                    <div class="form-group mb-5">
-                        <label class="form-label" for="Number" style="color: #28A5C5">
-                            {{ form_label(addColisForm.number) }}
-                        </label>
-                        {{ form_widget(addColisForm.number) }}
+                        {{ form_widget(addColisForm) }}
 
-                        <label class="form-label" for="Nombre" style="color: #28A5C5">
-                            {{ form_label(addColisForm.nombre) }}
-                        </label>
-                        {{ form_widget(addColisForm.nombre) }}
+                    <button type="submit" class="btn btn-success">
+                        Modifier le colis
+                    </button>
 
-                        <label class="form-label" for="loadinglab" style="color: #28A5C5">
-                            {{ form_label(addColisForm.loadinglab) }}
-                        </label>
-                        {{ form_widget(addColisForm.loadinglab) }}
-
-                        <label class="form-label" for="deliverylab" style="color: #28A5C5">
-                            {{ form_label(addColisForm.deliverylab) }}
-                        </label>
-                        {{ form_widget(addColisForm.deliverylab) }}
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="form-group mb-0">
-                        {{ form_widget(addColisForm.envoyer) }}
-                    </div>
+    {% else %}
+    <section style="background-color: #504e4e">
+        <div class="container d-flex flex-column">
+            <div class="row align-items-center justify-content-between gx-0 min-vh-100">
+                <div class="col-12 col-md-5 align-self-stretch">
+                    <div class="d-md-none img-cover"></div>
+                    <img alt="..." src="/img/test.jpg" height="87%" width="640">
+                    <div class="d-none d-md-block vw-50 h-100 float-end bg-cover"></div>
+                </div>
+            <div class="col-12 col-md-6 py-8 py-md-11" style="color: #28A5C5">
+                <h2 class="fw-bold text-center mb-2">
+                    Ajouter un colis :
+                </h2>
 
-                    {{ form_end(addColisForm) }}
+                <hr class="hr-sm my-6 my-md-8 mx-auto bg-gray-300" style="color: #28A5C5;">
+
+                {{ form_start(addColisForm) }}
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+
+                        <div class="my-custom-class-for-errors">
+                            {{ form_errors(addColisForm) }}
+                        </div>
+                        <div class="form-group mb-5">
+                            <label class="form-label" for="Number" style="color: #28A5C5">
+                                Numéro du colis :
+                            </label>
+                            {{ form_widget(addColisForm.number) }}
+
+                            <label class="form-label" for="Nombre" style="color: #28A5C5">
+                                Nombre de colis :
+                            </label>
+                            {{ form_widget(addColisForm.nombre) }}
+
+                            <label class="form-label" for="loadinglab" style="color: #28A5C5">
+                                Laboratoire de chargement :
+                            </label>
+                            {{ form_widget(addColisForm.loadinglab) }}
+
+                            <label class="form-label" for="deliverylab" style="color: #28A5C5">
+                                Laboratoire de livraison :
+                            </label>
+                            {{ form_widget(addColisForm.deliverylab) }}
+
+                            {% if addColisForm.vehicule == true %}
+                                {% do addColisForm.vehicule.setRendered() %}
+                            {% endif %}
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Ajouter le colis
+                        </button>
+                        {{ form_end(addColisForm) }}
+                    {% endif %}
 
                 </div>
             </div>

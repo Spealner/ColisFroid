@@ -3,47 +3,55 @@
 namespace App\Tests;
 
 use App\Entity\Colis;
+use App\Entity\Vehicules;
 use PHPUnit\Framework\TestCase;
 
 class ColisUnitTest extends TestCase
 {
     public function testIsTrue()
     {
-        $user = new Colis();
+        $colis = new Colis();
+        $vehicule = new Vehicules();
 
-        $user->setNumber(1)
+        $colis->setNumber(1)
             ->setNombre(1)
             ->setLoadinglab('loadinglab')
-            ->setDeliverylab('deliverylab');
+            ->setDeliverylab('deliverylab')
+            ->addVehicule($vehicule);
 
-        $this->assertTrue($user->getNumber() === 1);
-        $this->assertTrue($user->getNombre() === 1);
-        $this->assertTrue($user->getLoadinglab() === 'loadinglab');
-        $this->assertTrue($user->getDeliverylab() === 'deliverylab');
+        $this->assertTrue($colis->getNumber() === 1);
+        $this->assertTrue($colis->getNombre() === 1);
+        $this->assertTrue($colis->getLoadinglab() === 'loadinglab');
+        $this->assertTrue($colis->getDeliverylab() === 'deliverylab');
+        $this->assertContains($vehicule, $colis->getVehicule());
     }
 
     public function testIsFalse()
     {
-        $user = new Colis();
+        $colis = new Colis();
+        $vehicule = new Vehicules();
 
-        $user->setNumber(1234)
+        $colis->setNumber(1234)
             ->setNombre(123)
             ->setLoadinglab('loadinglab')
-            ->setDeliverylab('deliverylab');
+            ->setDeliverylab('deliverylab')
+            ->addVehicule($vehicule);
 
-        $this->assertFalse($user->getNumber() === 4321);
-        $this->assertFalse($user->getNombre() === 321);
-        $this->assertFalse($user->getLoadinglab() === 'false');
-        $this->assertFalse($user->getDeliverylab() === 'false');
+        $this->assertFalse($colis->getNumber() === 4321);
+        $this->assertFalse($colis->getNombre() === 321);
+        $this->assertFalse($colis->getLoadinglab() === 'false');
+        $this->assertFalse($colis->getDeliverylab() === 'false');
+        $this->assertNotContains(new Vehicules(), $colis->getVehicule());
     }
 
     public function testIsEmpty()
     {
-        $user = new Colis();
+        $colis = new Colis();
 
-        $this->assertEmpty($user->getNumber());
-        $this->assertEmpty($user->getNombre());
-        $this->assertEmpty($user->getLoadinglab());
-        $this->assertEmpty($user->getDeliverylab());
+        $this->assertEmpty($colis->getNumber());
+        $this->assertEmpty($colis->getNombre());
+        $this->assertEmpty($colis->getLoadinglab());
+        $this->assertEmpty($colis->getDeliverylab());
+        $this->assertEmpty($colis->getVehicule());
     }
 }

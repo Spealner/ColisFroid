@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ColisRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -36,6 +38,16 @@ class Colis
      * @ORM\Column(type="string", length=255)
      */
     private $deliverylab;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Vehicules::class, inversedBy="colis")
+     */
+    private $vehicule;
+
+    public function __construct()
+    {
+        $this->vehicule = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -86,6 +98,30 @@ class Colis
     public function setDeliverylab(string $deliverylab): self
     {
         $this->deliverylab = $deliverylab;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Vehicules[]
+     */
+    public function getVehicule(): Collection
+    {
+        return $this->vehicule;
+    }
+
+    public function addVehicule(Vehicules $vehicule): self
+    {
+        if (!$this->vehicule->contains($vehicule)) {
+            $this->vehicule[] = $vehicule;
+        }
+
+        return $this;
+    }
+
+    public function removeVehicule(Vehicules $vehicule): self
+    {
+        $this->vehicule->removeElement($vehicule);
 
         return $this;
     }

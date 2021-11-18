@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Colis;
+use App\Form\AddBoxToCarsType;
 use App\Form\AddBoxType;
 use App\Repository\ColisRepository;
+use App\Repository\VehiculesRepository;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,7 +25,7 @@ class HomeController extends AbstractController
 
     ): Response
     {
-        $data = $colisRepository->allBox();
+        $data = $colisRepository->findAll();
 
         $allBox = $paginator->paginate(
             $data, /*query NOT result */
@@ -38,26 +40,36 @@ class HomeController extends AbstractController
 
     /**
      * @Route("/colis/add", name="add_colis")
+     * @Route("/colis/{id}/update", name="box_update")
      */
-    public function addSondes(Request $request): Response
+    public function addColisAndUpdate(Colis $colis = null,Request $request): Response
     {
-        $colis = new Colis();
+        if(!$colis) {
+            $colis = new Colis();
+        }
 
         $form = $this->createForm(AddBoxType::class, $colis);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $colis = $form->getData();
+            if (!$colis->getId()) {
+                $colis = $form->getData();
 
+                $entityManager = $this->getDoctrine()->getManager();
+                $entityManager->persist($colis);
+                $entityManager->flush();
+
+                return $this->redirectToRoute('add_colis');
+            }
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($colis);
             $entityManager->flush();
 
-            return $this->redirectToRoute('add_colis');
+            return $this->redirectToRoute('all_colis');
         }
 
         return $this->render('colis/addcolis.html.twig', [
-            'addColisForm' => $form->createView()
+            'addColisForm' => $form->createView(),
+            'editMode' => $colis->getId() !== null
         ]);
     }
 }
