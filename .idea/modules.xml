@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/colisfroid.iml" filepath="$PROJECT_DIR$/.idea/colisfroid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/rd-temp-ecf.iml" filepath="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf/.idea/rd-temp-ecf.iml" />
     </modules>
   </component>
 </project>
