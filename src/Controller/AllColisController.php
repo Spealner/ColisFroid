@@ -55,10 +55,8 @@ class AllColisController extends AbstractController
     /**
      * @Route("/colis/{id}/remove", name="remove_box")
      */
-    public function removeBox(Colis $colis, Vehicules $vehicules)
+    public function removeBox(Colis $colis)
     {
-        $colis->removeVehicule($vehicules);
-
         return $this->redirectToRoute('all_colis');
     }
 }
