@@ -20,7 +20,7 @@ final class Version20211025082213 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('CREATE TABLE colis (id INT AUTO_INCREMENT NOT NULL, number INT NOT NULL, nombre INT NOT NULL, loadinglab VARCHAR(255) NOT NULL, deliverylab VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
+        $this->addSql('CREATE TABLE colis (id INT AUTO_INCREMENT NOT NULL PRIMARY KEY, number INT NOT NULL, nombre INT NOT NULL, loadinglab VARCHAR(255) NOT NULL, deliverylab VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
         $this->addSql('ALTER TABLE user CHANGE roles roles LONGTEXT NOT NULL COMMENT \'(DC2Type:json)\'');
     }
 

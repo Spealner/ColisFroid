@@ -33,11 +33,35 @@
                         {{ form_errors(addColisForm) }}
                     </div>
 
+<<<<<<< HEAD
                         {{ form_widget(addColisForm) }}
 
                     <button type="submit" class="btn btn-success">
                         Modifier le colis
                     </button>
+=======
+                    <div class="form-group mb-5">
+                        <label class="form-label" for="Number" style="color: #28A5C5">
+                            Numéro du colis :
+                        </label>
+                        {{ form_widget(addColisForm.number) }}
+
+                        <label class="form-label" for="Nombre" style="color: #28A5C5">
+                            Nombre de colis :
+                        </label>
+                        {{ form_widget(addColisForm.nombre) }}
+
+                        <label class="form-label" for="loadinglab" style="color: #28A5C5">
+                            Laboratoire de chargement :
+                        </label>
+                        {{ form_widget(addColisForm.loadinglab) }}
+
+                        <label class="form-label" for="deliverylab" style="color: #28A5C5">
+                            Laboratoire de livraison :
+                        </label>
+                        {{ form_widget(addColisForm.deliverylab) }}
+                    </div>
+>>>>>>> master
 
                     </div>
                 </div>

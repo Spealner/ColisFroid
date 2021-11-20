@@ -11,10 +11,13 @@
 
 - https://github.com/Spealner/ColisFroid
 
+<<<<<<< HEAD
 ## Lien de l'app
 
 - https://colisfroidapp.herokuapp.com/
 
+=======
+>>>>>>> master
 ***
 
 ## Environnement de développement

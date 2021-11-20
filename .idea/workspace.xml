@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Maj projet" />
+=======
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars Tries">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CarThreeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/AddColis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/RemoveColis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/car_three/carthree.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211025082213.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20211025082213.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarOneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarTwoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarTwoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/colis/addcolis.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
+    </list>
+>>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,7 +25,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -220,6 +238,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634906222681</updated>
       <workItem from="1634906227139" duration="13036000" />
+<<<<<<< HEAD
       <workItem from="1635425845219" duration="2125000" />
       <workItem from="1635497891554" duration="451000" />
       <workItem from="1635683979033" duration="5863000" />
@@ -228,6 +247,9 @@
       <workItem from="1635942155663" duration="4732000" />
       <workItem from="1636032447600" duration="63902000" />
       <workItem from="1636809353475" duration="82915000" />
+=======
+      <workItem from="1635842998611" duration="8591000" />
+>>>>>>> master
     </task>
     <task id="LOCAL-00001" summary="Add GitLab CI">
       <created>1634907819873</created>
@@ -334,6 +356,7 @@
       <option name="project" value="LOCAL" />
       <updated>1635423283866</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00016" summary="Maj projet">
       <created>1635504553018</created>
       <option name="number" value="00016" />
@@ -342,6 +365,9 @@
       <updated>1635504553018</updated>
     </task>
     <option name="localTasksCounter" value="17" />
+=======
+    <option name="localTasksCounter" value="16" />
+>>>>>>> master
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,11 +402,15 @@
     <MESSAGE value="Add CheckBox + Boutons Véhicules" />
     <MESSAGE value="Add Cars pages + navigation" />
     <MESSAGE value="Add Cars Tries" />
+<<<<<<< HEAD
     <MESSAGE value="Maj projet" />
     <option name="LAST_COMMIT_MESSAGE" value="Maj projet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="Add Cars Tries" />
+>>>>>>> master
   </component>
 </project>
