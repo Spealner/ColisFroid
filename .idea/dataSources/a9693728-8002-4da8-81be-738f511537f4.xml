@@ -1183,6 +1183,21 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     <table id="337" parent="2" name="colis">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
+
+    <table id="338" parent="2" name="colis_vehicules">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="339" parent="2" name="doctrine_migration_versions">
+      <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="340" parent="2" name="user">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="341" parent="2" name="vehicules">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <column id="342" parent="337" name="ID">
+
     <table id="338" parent="2" name="doctrine_migration_versions">
       <Collation>utf8_unicode_ci</Collation>
     </table>
@@ -1190,41 +1205,106 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
     <column id="340" parent="337" name="id">
+
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
+
+    <column id="343" parent="337" name="number">
+
     <column id="341" parent="337" name="number">
+
+    <column id="341" parent="337" name="number">
+
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
     <column id="342" parent="337" name="nombre">
+
+    <column id="342" parent="337" name="nombre">
+
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
+
     <column id="343" parent="337" name="loadinglab">
+
+
+    <column id="343" parent="337" name="loadinglab">
+
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
     <column id="344" parent="337" name="deliverylab">
+
+    <column id="344" parent="337" name="deliverylab">
+
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
+    <key id="347" parent="337" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="348" parent="338" name="colis_id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="349" parent="338" name="vehicules_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="350" parent="338" name="IDX_CE9C532A4D268D70">
+      <ColNames>colis_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="351" parent="338" name="IDX_CE9C532A8D8BD7E2">
+      <ColNames>vehicules_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="352" parent="338" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>colis_id
+vehicules_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="353" parent="339" name="version">
+
     <key id="345" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="346" parent="338" name="version">
+
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
+    <column id="354" parent="339" name="executed_at">
+      <Position>2</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="355" parent="339" name="execution_time">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <key id="356" parent="339" name="PRIMARY">
+
     <column id="347" parent="338" name="executed_at">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
@@ -1234,45 +1314,93 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <DataType>int(11)|0s</DataType>
     </column>
     <key id="349" parent="338" name="PRIMARY">
+
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
+
+
     <column id="350" parent="339" name="id">
+
+    <column id="350" parent="339" name="id">
+
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
+
     <column id="351" parent="339" name="email">
+
+    <column id="351" parent="339" name="email">
+
       <Position>2</Position>
       <DataType>varchar(180)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
     <column id="352" parent="339" name="roles">
+
+    <column id="352" parent="339" name="roles">
+
       <Position>3</Position>
       <Comment>(DC2Type:json)</Comment>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
     <column id="353" parent="339" name="password">
+
+    <column id="353" parent="339" name="password">
+
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+
     <index id="354" parent="339" name="UNIQ_8D93D649E7927C74">
+
+    <index id="354" parent="339" name="UNIQ_8D93D649E7927C74">
+
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
+
     <key id="355" parent="339" name="PRIMARY">
+
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+
+    <key id="363" parent="340" name="UNIQ_8D93D649E7927C74">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>UNIQ_8D93D649E7927C74</UnderlyingIndexName>
+    </key>
+    <column id="364" parent="341" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="365" parent="341" name="nom">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="366" parent="341" name="PRIMARY">
+
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+
     <key id="356" parent="339" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>UNIQ_8D93D649E7927C74</UnderlyingIndexName>
     </key>
+
   </database-model>
 </dataSource>

@@ -29,6 +29,7 @@
                         Accueil
                     </a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle"
                        href="#"
@@ -41,12 +42,53 @@
                         Menu
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{ path('add_colis') }}">Ajoutez un coli</a></li>
-                        <li><a class="dropdown-item" href="{{ path('car_one') }}">Véhicule 1</a></li>
-                        <li><a class="dropdown-item" href="{{ path('car_two') }}">Véhicule 2</a></li>
+                        <li><a class="dropdown-item" href="{{ path('add_colis') }}">Ajoutez un colis</a></li>
+                        <li><a class="dropdown-item" href="{{ path('add_vehicule') }}">Ajoutez un véhicule</a></li>
+                        <li><a class="dropdown-item" href="{{ path('all_colis') }}">Tous les colis</a></li>
+                        <li><a class="dropdown-item" href="{{ path('vehicules') }}">Tous nos véhicules</a></li>
                         <li><hr class="dropdown-divider"></li>
                     </ul>
                 </li>
+
+                <li>
+                    <a class="nav-link active" aria-current="page" href="{{ path('all_colis') }}"
+                       style="color: #28A5C5"
+                    >
+                        Tous les colis
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="navbarDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false"
+                       style="color: #28A5C5"
+                    >
+                        Tous nos Véhicules
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for vehicules in vehiculesNavbar() %}
+                            <li class="dropdown-item">
+                                <a href="{{ path('vehicules_nom', {'nom': vehicules.nom}) }}">{{ vehicules.nom }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+
+                {% if is_granted('ROLE_ADMIN') %}
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="{{ path('admin') }}"
+                           style="color: #28A5C5"
+                        >
+                            Admin
+                        </a>
+                    </li>
+                {% endif %}
+
+            <!-- Buttons -->
             </ul>
             <form class="d-flex" style="margin-left: 10px">
                 {% if is_granted('ROLE_USER') %}

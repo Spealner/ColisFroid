@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tous les colis{% endblock %}
+
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-12">
+            <div class="card">
+                <div class="card-header"
+                     style="color: #28A5C5;
+                        font-size: 4rem;
+                        text-align: center;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        align-items: center;
+                ">Tous les Colis :</div>
+                <table class="table table-striped table-hover mb-0">
+                    <thead>
+                    <tr>
+                        <th class="text-center text-uppercase">Numéro du coli :</th>
+                        <th class="text-center text-uppercase">Nombre de colis :</th>
+                        <th class="text-center text-uppercase">Laboratoire de chargement :</th>
+                        <th class="text-center text-uppercase">Laboratoire de livraison :</th>
+                        <th class="text-center text-uppercase">Véhicule :</th>
+                        <th class="text-center text-uppercase">Actions :</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for colis in colis %}
+                        <tr>
+                            <td class="text-center align-middle">{{ colis.number }}</td>
+                            <td class="text-center align-middle">{{ colis.nombre }}</td>
+                            <td class="text-center align-middle">{{ colis.loadinglab }}</td>
+                            <td class="text-center align-middle">{{ colis.deliverylab }}</td>
+                            <td class="text-center align-middle">
+                                {% for vehicule in colis.vehicule %}
+                                    {{ colis.vehicule[0] }}
+                                {% endfor %}
+                            </td>
+                            <td class="text-center align-middle">
+                                <a
+                                    href="{{ path('box_update', {id: colis.id}) }}"
+                                    class="btn btn-warning"
+                                ><i class="fas fa-edit"></i>
+                                    Modifier le colis
+                                </a>
+                                <a
+                                    href="{{ path('remove_box', {id: colis.id}) }}"
+                                    class="btn btn-danger"
+                                    onclick="return confirm('Attention ceci va supprimer le colis')"
+                                >
+                                    Supprimer
+                                </a>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center">Votre camion est vide</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- PAGINATION -->
+    <div class="d-flex justify-content-center">
+        {% do colis.setPageRange(2) %}
+        {{ knp_pagination_render(colis, 'base/pagination.html.twig') }}
+    </div>
+{% endblock %}

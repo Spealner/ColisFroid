@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Colis;
+use App\Entity\Vehicules;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -29,5 +30,18 @@ class ColisRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult()
         ;
+    }
+
+    /**
+     * @return Colis[]
+     */
+    public function findAllVehicules(Vehicules $vehicule): array
+    {
+        return $this->createQueryBuilder('p')
+            ->where(':vehicule MEMBER OF p.vehicule')
+            ->setParameter('vehicule', $vehicule)
+            ->getQuery()
+            ->getResult()
+            ;
     }
 }
