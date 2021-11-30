@@ -3,11 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Colis;
-use App\Form\AddBoxToCarsType;
 use App\Form\AddBoxType;
-use App\Repository\ColisRepository;
-use App\Repository\VehiculesRepository;
-use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,31 +14,16 @@ class HomeController extends AbstractController
     /**
      *@Route("/", name="home")
      */
-    public function index(
-        ColisRepository $colisRepository,
-        PaginatorInterface $paginator,
-        Request $request
-
-    ): Response
+    public function index(): Response
     {
-        $data = $colisRepository->findAll();
-
-        $allBox = $paginator->paginate(
-            $data, /*query NOT result */
-            $request->query->getInt('page', 1), /*page number*/
-            5 /*limit per page*/
-        );
-
-        return $this->render('home/home.html.twig', [
-            'colis' => $allBox,
-        ]);
+        return $this->render('home/home.html.twig');
     }
 
     /**
      * @Route("/colis/add", name="add_colis")
      * @Route("/colis/{id}/update", name="box_update")
      */
-    public function addColisAndUpdate(Colis $colis = null,Request $request): Response
+    public function addColisAndUpdate(?Colis $colis,Request $request): Response
     {
         if(!$colis) {
             $colis = new Colis();
@@ -52,10 +33,10 @@ class HomeController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
             if (!$colis->getId()) {
                 $colis = $form->getData();
 
-                $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->persist($colis);
                 $entityManager->flush();
 
