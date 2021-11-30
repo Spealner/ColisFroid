@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Maj projet" />
+    <list default="true" id="c2fac12e-2370-475f-8e7e-90fa5b94f9d9" name="Changes" comment="Add Cars pages + navigation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarOneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CarTwoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CarTwoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AddBoxType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddBoxType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/car_one/carone.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_one/carone.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_two/cartwo.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/allbox.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/allbox.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -17,7 +27,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../ECF Studi/rd-temp-ecf" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -165,13 +175,7 @@
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
-      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
-      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
     </include_path>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1zrVVtnqLoe17Qt6isidIJEvMP7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -190,7 +194,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -220,14 +223,6 @@
       <option name="presentableId" value="Default" />
       <updated>1634906222681</updated>
       <workItem from="1634906227139" duration="13036000" />
-      <workItem from="1635425845219" duration="2125000" />
-      <workItem from="1635497891554" duration="451000" />
-      <workItem from="1635683979033" duration="5863000" />
-      <workItem from="1635864064883" duration="124000" />
-      <workItem from="1635864216501" duration="6335000" />
-      <workItem from="1635942155663" duration="4732000" />
-      <workItem from="1636032447600" duration="63902000" />
-      <workItem from="1636809353475" duration="82915000" />
     </task>
     <task id="LOCAL-00001" summary="Add GitLab CI">
       <created>1634907819873</created>
@@ -327,21 +322,7 @@
       <option name="project" value="LOCAL" />
       <updated>1635351126203</updated>
     </task>
-    <task id="LOCAL-00015" summary="Add Cars Tries">
-      <created>1635423283866</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1635423283866</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Maj projet">
-      <created>1635504553018</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1635504553018</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +338,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -375,12 +355,6 @@
     <MESSAGE value="Add ColisForm + Page" />
     <MESSAGE value="Add CheckBox + Boutons Véhicules" />
     <MESSAGE value="Add Cars pages + navigation" />
-    <MESSAGE value="Add Cars Tries" />
-    <MESSAGE value="Maj projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maj projet" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Cars pages + navigation" />
   </component>
 </project>

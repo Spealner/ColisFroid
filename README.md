@@ -3,20 +3,6 @@
 - Site de gestion de colis
 ***
 
-## Lien Trello du projet
-
-- https://trello.com/b/Rm0rneeW
-
-## Lien GitHub du projet 
-
-- https://github.com/Spealner/ColisFroid
-
-## Lien de l'app
-
-- https://colisfroidapp.herokuapp.com/
-
-***
-
 ## Environnement de développement
 
 ### Pré-requis :
