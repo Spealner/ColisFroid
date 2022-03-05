@@ -4,17 +4,26 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\AddUserType;
-use App\Form\RegistrationFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @author Spealner@gmail.com
+ */
 class RegistrationController extends AbstractController
 {
     /**
+     * // add user
+     *
      * @Route("/inscription", name="register")
+     *
+     * @param Request $request
+     * @param UserPasswordHasherInterface $userPasswordHasherInterface
+     *
+     * @return Response
      */
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasherInterface): Response
     {

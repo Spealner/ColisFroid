@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A Propos de ColisFroid{% endblock %}
+
+{% block body %}
+    <!-- APROPOS -->
+    <section
+        class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover"
+        style="background-image: url('/img/test.jpg');
+            background-size: 100%;
+            background-position: center;
+            margin-right: 15px;
+            margin-left: 15px;
+            padding-bottom: 30px;
+            font-family: 'Playfair Display', sans-serif;
+    ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                    <!-- Heading -->
+                    <h1 class="display-2 text-white">
+                        ColisFroid
+                    </h1>
+
+                    <!-- TEXT -->
+                    <p class="lead text-white-50 mb-6">
+                        EURL spécialisée dans secteur du fret express.
+                    </p>
+
+                    <p class="lead text-white mb-6">
+                        EURL COLIS FROID, société à responsabilité limitée est active depuis 26 ans.
+                        Implantée à LEERS (59115), elle est spécialisée dans le secteur d'activité de la messagerie,
+                        fret express. Son effectif est compris entre 3 et 5 salariés. Sur l'année 2012 elle réalise un
+                        chiffre d'affaires de 413 500,00 €. Societe.com recense 4 établissements et le dernier
+                        événement notable de cette entreprise date du 03-04-2012. Frédéric BENHAIM, Dominique BENHAIM,
+                        sont gérants de l'entreprise EURL COLIS FROID.
+                    </p>
+
+                    <!-- Button -->
+                    <a href="{{ path('home') }}" class="btn btn-primary" style="margin-bottom: 20px; border-radius: 15px">
+                        Revenir à l'acceuil
+                    </a>
+
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+{% endblock %}

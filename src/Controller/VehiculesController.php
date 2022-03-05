@@ -7,15 +7,25 @@ use App\Form\AddVehiculeType;
 use App\Repository\ColisRepository;
 use App\Repository\VehiculesRepository;
 use Knp\Component\Pager\PaginatorInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @author Spealner@gmail.com
+ */
 class VehiculesController extends AbstractController
 {
     /**
+     * // all vehicles
+     *
      * @Route("/vehicules", name="vehicules")
+     *
+     * @param VehiculesRepository $vehiculesRepository
+     *
+     * @return Response
      */
     public function index(VehiculesRepository $vehiculesRepository): Response
     {
@@ -25,7 +35,17 @@ class VehiculesController extends AbstractController
     }
 
     /**
-     * @Route("/vehicules/{nom}", name="vehicules_nom")
+     * // all box in vehicles
+     *
+     * @Route("/{nom}", name="vehicules_nom")
+     * @IsGranted("ROLE_USER")
+     *
+     * @param Vehicules $vehicules
+     * @param ColisRepository $colisRepository
+     * @param PaginatorInterface $paginator
+     * @param Request $request
+     *
+     * @return Response
      */
     public function vehicule(
         Vehicules $vehicules,
@@ -50,7 +70,14 @@ class VehiculesController extends AbstractController
     }
 
     /**
+     * // add vehicles
+     *
      * @Route("/vehicule/add", name="add_vehicule")
+     * @IsGranted("ROLE_ADMIN")
+     *
+     * @param Request $request
+     *
+     * @return Response
      */
     public function addVehicule(Request $request): Response
     {
@@ -74,7 +101,10 @@ class VehiculesController extends AbstractController
     }
 
     /**
+     * // delete vehicles from tables
+     *
      * @Route("/vehicule/{id}/delete", name="vehicule_delete")
+     * @IsGranted("ROLE_ADMIN")
      */
     public function deleteVehicule(Vehicules $vehicules)
     {

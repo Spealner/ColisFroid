@@ -3,7 +3,7 @@
 {% block title %}Tous les colis{% endblock %}
 
 {% block body %}
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="font-family: 'Playfair Display', sans-serif;">
         <div class="col-12 col-md-10 col-lg-8 col-xl-12">
             <div class="card">
                 <div class="card-header"
@@ -46,7 +46,7 @@
                                     Modifier le colis
                                 </a>
                                 <a
-                                    href="{{ path('remove_box', {id: colis.id}) }}"
+                                    href="{{ path('box_delete', {id: colis.id}) }}"
                                     class="btn btn-danger"
                                     onclick="return confirm('Attention ceci va supprimer le colis')"
                                 >
