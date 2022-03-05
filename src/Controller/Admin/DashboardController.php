@@ -3,6 +3,8 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Colis;
+use App\Entity\Contact;
+use App\Entity\User;
 use App\Entity\Vehicules;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -13,7 +15,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class DashboardController extends AbstractDashboardController
 {
     /**
+     * // Home page Admin dashboard
+     *
      * @Route("/admin", name="admin")
+     *
+     * @return Response
      */
     public function index(): Response
     {
@@ -32,5 +38,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToRoute('Acceuil de l\'application', 'fa ...', 'home');
         yield MenuItem::linkToCrud('Trier les colis', 'fas fa-list', Colis::class);
         yield MenuItem::linkToCrud('Trier les véhicules', 'fas fa-list', Vehicules::class);
+        yield MenuItem::linkToCrud('Tous les messages', 'fas fa-list', Contact::class);
+        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-list', User::class);
     }
 }

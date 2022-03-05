@@ -1,0 +1,63 @@
+{% block card %}
+    <!-- PARTENAIRES -->
+    <section class="pt-8 pt-md-11">
+        <div class="container" style="margin-bottom: 15px">
+            <!-- / .row -->
+            <div class="row" style="margin-top: 30px; margin-bottom: 30px">
+                <div class="col-12">
+
+                    <!-- Card -->
+                    <div class="card card-row shadow-light-lg mb-6" style="border: none">
+                        <div class="row gx-0">
+                            <img
+                                src="/img/test.jpg"
+                                alt="test"
+                                class="mx-auto d-block"
+                                style="width: 648px;
+                                        height: 310px;
+                                        margin-top: 15px;
+                                        border-radius: 15px 0 0 15px;
+                                ">
+
+                            <div
+                                class="col-12 col-md-6"
+                                style="background: black;
+                                    color: #FFF;
+                                    font-size: 30px;
+                                    border-radius: 15px 15px 15px 15px;
+                                ">
+
+                                <!-- Body -->
+                                <div class="card-body" style="font-family: 'Playfair Display', sans-serif">
+
+                                    <!-- Heading -->
+                                    <ul style="margin-top: 25px">
+                                        <li>Véhicule 1 : <a href="#!">AB-930-VB</a></li>
+                                        <li>Véhicule 2 : <a href="#!">EC-135-SA</a></li>
+                                        <li>Véhicule 3</li>
+                                        <li>Véhicule 4</li>
+                                    </ul>
+
+                                    <a
+                                        href="{{ path('vehicules') }}"
+                                        class="btn btn-primary"
+                                        style="margin-bottom: 20px;
+                                            margin-top: 25px;
+                                            border-radius: 15px;
+                                            font-family: 'Playfair Display', sans-serif;
+                                    ">
+                                        Tous nos véhicules
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+{% endblock %}

@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Colis;
 use App\Entity\Vehicules;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -21,7 +22,11 @@ class ColisRepository extends ServiceEntityRepository
     }
 
     /**
+     * // retourne colis trier
+     *
      * @return Colis[]
+     *
+     * @return int|mixed|string
      */
     public function allBox()
     {
@@ -33,7 +38,13 @@ class ColisRepository extends ServiceEntityRepository
     }
 
     /**
+     * // retourne colis membre d'un vehicule
+     *
      * @return Colis[]
+     *
+     * @param Vehicules $vehicule
+     *
+     * @return array
      */
     public function findAllVehicules(Vehicules $vehicule): array
     {
@@ -43,5 +54,20 @@ class ColisRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult()
             ;
+    }
+
+    /**
+     * @param int $page
+     * @param int $limit
+     *
+     * @return Paginator
+     */
+    public function getPaginatedBox(int $page, int $limit): Paginator
+    {
+        return new Paginator(
+            $this->createQueryBuilder('p')
+                ->setMaxResults($limit)
+                ->setFirstResult(($page - 1) * $limit)
+    );
     }
 }

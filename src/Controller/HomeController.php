@@ -12,7 +12,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     *@Route("/", name="home")
+     * @Route ("/", name="home")
+     *
+     * @return Response
      */
     public function index(): Response
     {
@@ -22,6 +24,11 @@ class HomeController extends AbstractController
     /**
      * @Route("/colis/add", name="add_colis")
      * @Route("/colis/{id}/update", name="box_update")
+     *
+     * @param Colis|null $colis
+     * @param Request $request
+     *
+     * @return Response
      */
     public function addColisAndUpdate(?Colis $colis,Request $request): Response
     {

@@ -9,6 +9,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ *
+ * @author Spealner@gmail.com
  */
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
